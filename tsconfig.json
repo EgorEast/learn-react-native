@@ -19,6 +19,6 @@
     "baseUrl": "./src",
     "downlevelIteration": true
   },
-  "include": ["src"],
+  "include": ["src", ".eslintrc.js", "babel.config.js"],
   "exclude": ["node_modules", "__tests__/**/*-test.ts"]
 }

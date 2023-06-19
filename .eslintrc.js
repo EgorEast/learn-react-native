@@ -1,4 +1,4 @@
-/* eslint-disable */
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const process = require('process');
 module.exports = {
   root: true,
@@ -10,24 +10,29 @@ module.exports = {
     '@react-native-community',
     'airbnb-typescript',
     'prettier',
-    'prettier/@typescript-eslint',
-    'prettier/react',
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:react-hooks/recommended',
     'plugin:react/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 2023,
     sourceType: 'module',
+    project: './tsconfig.json',
   },
   plugins: ['react', '@typescript-eslint' /* , 'autofix', 'import' */],
+  settings: {
+    'import/resolver': {
+      typescript: {},
+    },
+  },
   rules: {
-    // indent: ['error', 2, { SwitchCase: 1 }],
     'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
