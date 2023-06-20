@@ -35,25 +35,20 @@ const styles = StyleSheet.create({
   },
 });
 
-const ProductItem: ProductItemComponent = ({ image, name, price }) => {
-  const a = 2;
-  console.log(a);
-
-  return (
-    <TouchableHighlight
-      style={styles.categoryItem}
-      underlayColor={COLORS.secondary}
-      onPress={() => {
-        //
-      }}
-    >
-      <View style={styles.insideContainer}>
-        <Image style={styles.image} source={image} />
-        <Text style={styles.name}>{name}</Text>
-        <Text style={styles.price}>{price}</Text>
-      </View>
-    </TouchableHighlight>
-  );
-};
+const ProductItem: ProductItemComponent = ({ image, name, price }) => (
+  <TouchableHighlight
+    style={styles.categoryItem}
+    underlayColor={COLORS.secondary}
+    onPress={() => {
+      //
+    }}
+  >
+    <View style={styles.insideContainer}>
+      <Image style={styles.image} source={image} />
+      <Text style={styles.name}>{name}</Text>
+      <Text style={styles.price}>{price}</Text>
+    </View>
+  </TouchableHighlight>
+);
 
 export default ProductItem;
