@@ -1,5 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const process = require('process');
+
 module.exports = {
   root: true,
   env: {

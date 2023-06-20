@@ -1,6 +1,4 @@
 import React from 'react';
 
-const Popular = () => {
-  return <>Popular</>;
-};
+const Popular = () => <>Popular</>;
 export default Popular;
