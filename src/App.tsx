@@ -1,7 +1,7 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
-import Header from './components/Header/Header';
+import Header from './components/Header';
 
 const styles = StyleSheet.create({
   container: {
